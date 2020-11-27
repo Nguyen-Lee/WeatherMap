@@ -27,7 +27,7 @@ public class ApiKeysTest extends BaseTestCase {
     @Test (dependsOnMethods = "createApiKey")
     public void updateApiKey() {
         String key = apiKeys.act().getKeyOfLastRow();
-        String newName = "Updated key name by Nguyen Lee";
+        String newName = "Updated - Nguyen Le";
         apiKeys.act().updateNameByKey(key, newName);
         apiKeys.verify().lastRowHasExpectedName(newName);
     }

@@ -69,7 +69,7 @@ public class ApiKeysActController {
         String mainWindow = driver.getWindowHandle();
         WebElement activeElement = driver.switchTo().activeElement();
         logger.info(activeElement.getTagName());
-        
+
         WebElementUtil.inputText(txtOldName, newName);
         btnUpdate.click();
 
